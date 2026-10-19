@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Age Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="card">
+  <h1>Age calculator</h1>
+  <p class="sub">Enter a date of birth to see the exact age.</p>
+
+  <div class="row">
+    <label for="dob">Date of birth</label>
+    <input type="date" id="dob">
+  </div>
+  <div class="row">
+    <label for="on">Age on date</label>
+    <input type="date" id="on">
+  </div>
+
+  <div class="actions">
+    <button id="calc" type="button">Calculate age</button>
+    <button id="reset" type="button">Reset</button>
+  </div>
+  <p class="error" id="err" role="alert"></p>
+
+  <section class="result" id="result" hidden aria-live="polite">
+    <div class="big">
+      <div class="unit"><b id="y">0</b><span>years</span></div>
+      <div class="unit"><b id="m">0</b><span>months</span></div>
+      <div class="unit"><b id="d">0</b><span>days</span></div>
+    </div>
+    <ul class="facts">
+      <li><span>Total months</span><strong id="tm"></strong></li>
+      <li><span>Total weeks</span><strong id="tw"></strong></li>
+      <li><span>Total days</span><strong id="td"></strong></li>
+      <li><span>Next birthday</span><strong id="nb"></strong></li>
+    </ul>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
